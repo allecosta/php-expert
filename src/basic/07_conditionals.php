@@ -46,7 +46,7 @@ if ($time < '13') {
  */
 $favNumber = 10;
 
-switch ($FavNumber) {
+switch ($favNumber) {
     case 1 :
         echo "O meu número predileto é 1";
         break;
