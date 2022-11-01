@@ -44,7 +44,7 @@ if ($time < '13') {
  * switch - Executa diferentes instruções com base em diferentes condições
  *  
  */
-$FavNumber = 10;
+$favNumber = 10;
 
 switch ($FavNumber) {
     case 1 :
