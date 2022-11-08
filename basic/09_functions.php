@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Função é um bloco de código que poder ser usada repetidamente em um programa
  * A mesma não será executada automaticamente quando uma página for carregada
@@ -49,8 +51,6 @@ familyNameTwo("Andreia", 1987);
  * Agora é possivel especificar o tipo de dados esperado ao declarar uma função
  * 
  */
-declare(strict_types=1);
-
 function sum(int $number1, int $number2) 
 {
     return $number1 + $number2;
@@ -110,7 +110,9 @@ function mult(float $number1, float $number2) : int
     return (int)($number1 * $number2);
 }
 
-echo mult(8, 4) . PHP_EOL;
+echo mult(8, 4);
+
+echo PHP_EOL;
 
 
 
@@ -128,3 +130,93 @@ $num = 5;
 addFive($num);
 
 echo $num;
+
+echo PHP_EOL;
+
+
+
+/**
+ * Funções de classiaficação (crescente e decrescente) para arrays
+ * 
+ */
+
+ // ordenando o array em ordem crescente com a função sort()
+ $cars = [
+    'Ford',
+    'BMW',
+    'Ferrari'
+ ];
+
+ sort($cars);
+
+ $carsLength = count($cars);
+
+ for ($i = 0; $i < $carsLength; $i++) {
+    echo $cars[$i] . PHP_EOL;
+ }
+
+ // ordenando o array em ordem decrescente com a função rsort()
+ $numbers = [4, 6, 1, 2, 22, 11];
+
+ rsort($numbers);
+
+ $numbersLength = count($numbers);
+
+ for ($i = 0; $i < $numbersLength; $i++) {
+    echo $numbers[$i] . PHP_EOL;
+ }
+
+ // ordenando o array em ordem crescente de acordo com o valor, usando a função asort()
+ $age = [
+    'Ythalo' => 43,
+    'Alexandre' => 38,
+    'Paulo' => 37,
+    'Andreia' => 35
+ ];
+
+ asort($age);
+
+ foreach ($age as $key => $value) {
+    echo $key . " -> " . $value . PHP_EOL;
+ }
+
+// ordenando o array em ordem crescente de acordo com a chave, usando a função ksort()
+$height = [
+    'Dimas' => 1.84,
+    'Carlos' => 1.83,
+    'Roberto' => 1.81
+];
+
+ksort($height);
+
+foreach ($height as $key => $value) {
+    echo $key . " -> " . $value . PHP_EOL;
+}
+
+// ordenando o array em ordem decrescente de acordo com o valor, usando a função arsort()
+$fruits = [
+    'Manga' => 5,
+    'Banana' => 6,
+    'Maça' => 4,
+    'Melancia' => 7
+];
+
+arsort($fruits);
+
+foreach ($fruits as $key => $value) {
+    echo $key . " -> " . $value . PHP_EOL;
+}
+
+// ordenando o array em ordem decrescente de acordo com a chave, usando a função krsort()
+$fruits = [
+    'Manga' => 5,
+    'Banana' => 6,
+    'Maça' => 4,
+    'Melancia' => 7
+];
+
+krsort($fruits);
+
+foreach ($fruits as $key => $value) {
+    echo $key . " -> " . $value . PHP_EOL;
+}
