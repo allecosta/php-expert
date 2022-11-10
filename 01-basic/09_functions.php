@@ -220,3 +220,35 @@ krsort($fruits);
 foreach ($fruits as $key => $value) {
     echo $key . " -> " . $value . PHP_EOL;
 }
+
+
+
+/**
+ * Expressão regulares (regex) é uma sequência de caracteres que forma um padrão de pesquisa
+ * 
+ * Podem ser usadas para executar todos os tipos de pesquisa de texto e operações de substituição de texto. 
+ * 
+ */
+
+ // preg_match_all() - função que dirá quantas correspondências foram encontradas para um padrão de string
+ $str = "Eu sou a ressurreição e a vida. Quem crê em mim, ainda que morra, viverá"; 
+ $pattern = "/em/i";
+
+ echo preg_match_all($pattern, $str) . PHP_EOL;
+
+ // preg_replace() - função que substitui todas as correspondências do padrão em uma string por outra string
+ $str = "Visite a documentação php.net";
+ $pattern = "/php.net/i";
+
+ echo preg_replace($pattern, "PHP FIG", $str) . PHP_EOL;
+
+ // preg_match() - função que informa se uma string contém correspondencias de um padrão
+ $str = "Visite a documentação php.net";
+ $pattern = "/php.net/i";
+ 
+ echo preg_match($pattern, $str) . PHP_EOL;
+
+ $str2 = "Maça e BANANA";
+ $pattern2 = "/ba(na){2}/i";
+
+var_dump(preg_match($pattern2, $str2));
