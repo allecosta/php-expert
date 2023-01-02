@@ -1,9 +1,11 @@
 <html>
-    <style>
-        .error {
-            color: red;
-        }
-    </style>
+    <head>
+        <style>
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
     <body>
         <h2>PHP Form Validation</h2>
         <p><span class="error">* Campo obrigatorio</span></p>
@@ -79,7 +81,6 @@
                 <input type="radio" name="gender" value="Outros">Outros
                 <span class="error">* <?= $genderError; ?></span>
             </label><br><br>
-
             <input type="submit" name="submit" value="submit">
         </form>
 
