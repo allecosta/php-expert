@@ -1,6 +1,5 @@
 <?php
-
-abstract class fruit 
+abstract class Fruit 
 {
     abstract protected function prefixFruit($name);
 }
