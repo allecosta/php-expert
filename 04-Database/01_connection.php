@@ -1,6 +1,9 @@
 <?php
 
-// MySQli - Orientado a Objetos
+/**
+ * MySQli - Orientado a Objetos
+ * 
+ */
 $serverName = "localhost";
 $userName = "user_name";
 $password = "pass_0101";
@@ -21,7 +24,10 @@ $conn->close();
 
 
 
-// PDO - PHP Data Objects
+/**
+ * PDO - PHP Data Objects
+ * 
+ */
 $serverName = "localhost";
 $userName = "user_name";
 $password = "pass_0101";
