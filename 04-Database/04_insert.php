@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * A instrução INSERT INTO é usada para adicionar novos registros a uma tabela.
+ * 
+ */
+
+/**
  * MySQLi - Orientado a Objetos
  * 
  */
