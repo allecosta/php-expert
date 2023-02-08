@@ -43,6 +43,8 @@ try {
 
     // criando o database
     $sql = "CREATE DATABASE db_myDB";
+
+    // executando a query
     $conn->exec($sql);
 
     echo "Banco de dados criado com sucesso!";

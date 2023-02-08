@@ -34,7 +34,10 @@ $password = "pass_0101";
 $dbName = "db_";
 
 try {
+    // criando a conexão
     $conn = new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);
+
+    // definindo modo de erro
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     echo "Conexão realizada com sucesso";
