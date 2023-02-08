@@ -7,7 +7,6 @@
  * 
  */
 
-
 echo "Hoje é: " . date('d/m/Y') . PHP_EOL;
 echo "Hoje é: " . date('d.m.Y') . PHP_EOL;
 echo "Hoje é: " . date('d-m-Y') . PHP_EOL;
@@ -25,10 +24,10 @@ echo "Que dia é hoje? " . date('l') . PHP_EOL;
  * 
  */
 
-
 //Gerando a hora atual
 echo "Horário: " . date('H:i:s') . PHP_EOL;
 echo "Agora são: " . date('h:i:sa') . PHP_EOL;
+
 
 // Definindo o fuso horário padrão em caso de divergência com a hora especificada pelo servidor
 date_default_timezone_set("America/Sao_Paulo");
@@ -60,6 +59,7 @@ $date = strtotime("+10 Months");
 echo date('Y-m-d h:i:sa', $date) . PHP_EOL;
 
 
+// Visualizando datas para as próximas 10 semanas 
 $dateInitial = strtotime("Sunday");
 $dateFinal = strtotime("+10 week", $dateInitial);
 
