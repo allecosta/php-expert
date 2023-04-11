@@ -54,11 +54,9 @@ if ($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpe
     $uploadOk = false;
 }
 
-// Verificando se a variavel uploadOk está sendo definida como false devido a erros no upload
+// Verificando se a variavel uploadOk está sendo definida como false devido a erros no upload, se nao, o upload irá ser realizado
 if ($uploadOk == false) {
     echo "OPS! Seu arquivo não foi carregado.";
-
-// Se tudo estiver certo, o upload irá ser realizado
 } else {
     $move = move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $file);
 
