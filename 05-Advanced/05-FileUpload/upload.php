@@ -3,8 +3,12 @@
 /**
  * É necessario configurar o php.ini para permitir uploads de arquivos
  * 
- * file_uploads = On
+ * file_uploads = On 
  * 
+ * Caso seja necessario, deverá ampliar a memoria para subir tamanho de arquivos maiores
+ * Isso também é configurado no php.ini que vem definido por padrão com 512M ou 528M
+ * 
+ * memory_limit = 512M 
  */
 
  // Diretorio onde o arquivo será colocado 
@@ -50,9 +54,18 @@ if ($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpe
     $uploadOk = false;
 }
 
-// Verificando se a variavel $uploadOk está sendo definida como false devido a erros no upload
-if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $file)) {
-    echo "O arquivo: " . htmlspecialchars(basename($_FILES['fileToUpload']['name'])) . " foi carregado com sucesso."; 
+// Verificando se a variavel uploadOk está sendo definida como false devido a erros no upload
+if ($uploadOk == false) {
+    echo "OPS! Seu arquivo não foi carregado.";
+
+// Se tudo estiver certo, o upload irá ser realizado
 } else {
-    echo "OPS! Ocorreu um erro ao realizar o upload do arquivo(s).";
+    $move = move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $file);
+
+    if ($move) {
+        echo "O arquivo: " . htmlspecialchars(basename($_FILES['fileToUpload']['name'])) . " foi carregado com sucesso."; 
+    } else {
+        echo "OPS! Ocorreu um erro ao realizar o upload do arquivo(s).";
+    }
 }
+
