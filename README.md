@@ -53,6 +53,20 @@
   - Delete
   - Update
   - Limit
+
+- [PHP Advanced](/05-Advanced)
+  - Include
+  - File Handling
+  - File Open Read
+  - File Create Write
+  - File Upload
+  - DateTime
+  - Cookies
+  - Sessions
+  - Filters
+  - Callback
+  - JSON
+  - Exceptions
   
 
  
