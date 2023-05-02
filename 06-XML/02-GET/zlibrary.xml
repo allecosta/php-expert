@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <bookstore>
+        <book category="Infantil">
+            <title lang="pt-br">Harry Potter</title>
+            <author>J K Rowling</author>
+            <year>2005</year>
+            <price>R$ 75.00</price>
+        </book>
+        <book category="Web">
+            <title lang="pt-br">Introdução ao Laravel</title>
+            <author>Taylor Otwell</author>
+            <year>2014</year>
+            <price>R$ 175.00</price>
+        </book>
+    </bookstore>
