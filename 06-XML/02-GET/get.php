@@ -17,6 +17,7 @@
  echo $xml->book[1]->title . PHP_EOL;
 
 
+
  // Obtendo valores atráves de loop
  $xml = simplexml_load_file("zlibrary.xml") or die ("OPS! Não foi possível criar objeto.");
 
@@ -28,6 +29,7 @@
  }
 
 
+
  // Obtendo valores de atributos
  $xml = simplexml_load_file("zlibrary.xml") or die ("OPS! Não foi possível criar objeto.");
 
@@ -35,6 +37,7 @@
  echo $xml->book[1]->title['lang'] . PHP_EOL;
 
 
+ 
  // Obtendo valores de atributos atráves de loop
  $xml = simplexml_load_file("zlibrary.xml") or die ("OPS! Não foi possível criar objeto.");
 
