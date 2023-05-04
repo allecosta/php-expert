@@ -67,6 +67,13 @@
   - Callback
   - JSON
   - Exceptions
+
+- [PHP XML](/06-XML)
+  - SimpleXML Parser
+  - SimpleXML GET
+  - Expat
+  - DOM
+  
   
 
  
