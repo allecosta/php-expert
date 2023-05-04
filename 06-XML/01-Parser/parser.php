@@ -20,6 +20,7 @@ $xml = simplexml_load_string($xmlData) or die ("OPS! Não foi possível criar ob
 print_r($xml);
 
 
+
 // Verificando erros  
 libxml_use_internal_errors(true);
 
