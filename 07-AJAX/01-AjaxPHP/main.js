@@ -1,6 +1,6 @@
 function showHint(str) {
     if (str.length == 0) {
-        document.ElementById("txtHint").innerHTML = "";
+        document.getElementById("txtHint").innerHTML = "";
         return;
     } else {
         let xmlhttp = new XMLHttpRequest();
