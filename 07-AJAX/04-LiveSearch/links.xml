@@ -1,0 +1,22 @@
+<pages>
+    <link>
+        <title>PHP tags</title>
+        <url>https://www.php.net/manual/en/language.basic-syntax.php</url>
+    </link>
+    <link>
+        <title>PHP Classes and Objects</title>
+        <url>https://www.php.net/manual/en/language.oop5.php</url>
+    </link>
+    <link>
+        <title>PHP Security</title>
+        <url>https://www.php.net/manual/en/security.php</url>
+    </link>
+    <link>
+        <title>PHP Features</title>
+        <url>https://www.php.net/manual/en/features.php</url>
+    </link>
+    <link>
+        <title>PHP Function Reference</title>
+        <url>https://www.php.net/manual/en/funcref.php</url>
+    </link>
+</pages>
