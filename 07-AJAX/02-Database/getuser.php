@@ -20,7 +20,7 @@
         <?php 
             $q = intval($_GET['q']);
             
-            $conn = new mysqli("servidor", "usuario", "senha", "database");
+            $conn = new mysqli("servername", "username", "password", "dbname");
 
             if ($conn->connect_error) {
                 die("OPS! Falha na conexão" . $conn->connect_error);
