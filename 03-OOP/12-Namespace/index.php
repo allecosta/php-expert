@@ -1,7 +1,7 @@
 <?php
 
-require 'App\Row.php';
-require 'App\Table.php';
+use App\Row;
+use App\Table;
 
 
 /**
